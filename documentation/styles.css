@@ -9,7 +9,7 @@ body {
     height: 100vh;
     width: 100%;
 }
-main {
+.main-fancy {
     background-color: linen;
     width: 70%;
     margin: 30px auto;
@@ -21,6 +21,12 @@ main {
     width: 77%;
     margin: 1.5rem auto;
     line-height: 1.5;
+}
+.info-2 {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 .resp-img-lg {
     width: 80%;
