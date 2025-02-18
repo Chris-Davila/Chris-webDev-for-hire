@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+    --color-indian-sand: #5C271F;
+    --color-desert-sand: #D9B18E;
+    --color-sandy-sand: #D9CCCA;
+    --color-sahara-sand: #5C3C1F;
+    --color-turquoise-300: #739994;
+    --color-turquoise-500: #1F5C55;
+}
