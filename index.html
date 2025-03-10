@@ -62,7 +62,7 @@
 			<h1 class="text-3xl font-bold">About Me</h1>
 		</div>
 		<div class="container mx-auto flex max-lg:flex-wrap gap-18 lg:gap-14">
-			<div class="text-indian-sand text-base/relaxed max-lg:mx-auto max-lg:grow-0 max-lg:shrink-0 lg:flex-1 basis-[75vw] lg:basis-5/8">
+			<div class="text-indian-sand text-base leading-8 max-lg:mx-auto max-lg:grow-0 max-lg:shrink-0 lg:flex-1 basis-[75vw] lg:basis-5/8">
 				<p class="mb-4">Hi there! I'm Chris, a passionate individual who finds joy in a variety of activities and interests. As an avid video gamer and fitness enthusiast, I like running, going to the gym, and lifting weights. My faith is an essential part of my life; I am a Christian and attend church every Sunday. I am actively involved in my church community, where I deliver food to the needy, volunteer in the library, and help teach priesthood lessons.</p>
 
 				<p class="mb-4">I have an insatiable curiosity for learning and expanding my knowledge, particularly in computing and languages. Engaging with people in their native languages and learning about different cultures fascinates me. Problem-solving is my forte—I find fulfillment in solving puzzles in games, tackling math problems, and taking on coding challenges.</p>
@@ -75,7 +75,7 @@
 				<p>Thanks for taking the time to get to know me!</p>
 			</div>
 			<!-- Carousel -->
-			<div id="controls-carousel" class="relative max-lg:mx-auto h-fit lg:self-center max-lg:grow-0 max-lg:shrink-0 lg:flex-none basis-[75vw] lg:basis-3/8" data-carousel="static">
+			<div id="controls-carousel" class="relative max-lg:mx-auto h-fit lg:self-center max-lg:grow-0 max-lg:shrink-0 lg:flex-none basis-[75vw] lg:w-3/8" data-carousel="static">
 				<!-- Carousel wrapper -->
 				<div class="relative h-64 overflow-hidden rounded-lg md:h-116">
 					<!-- Item 1 -->
@@ -325,12 +325,12 @@
 		</div>
 	</section>
 	<!-- My Projects Section -->
-	<section id="projects-section" class="py-36 md:py-40">
-		<div class="container mx-auto mb-13">
+	<section id="projects-section" class="py-36 md:py-40 flex flex-col gap-14">
+		<div class="container mx-auto">
 			<h2 class="text-3xl font-bold text-indian-sand">My Projects</h2>
 		</div>
 		<div class="container mx-auto">
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-md:px-4">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-md:px-6">
 				<div class="group cursor-pointer relative">
 					<a href="/BeerRaid1.png" data-lightbox="beer-raid" data-title="Beer Raiders Start Screen">
 						<img src="/BeerRaid1.png" alt="Beer Raiders Game" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
@@ -381,15 +381,30 @@
 				<!-- Repeat this div for each image -->
 			</div>
 		</div>
+		<div class="container mx-auto">
+			<div class="inline-flex gap-4 mb-4">
+				<h3 class="text-2xl font-semibold text-indian-sand">Beer Raiders</h3>
+				<img src="/python.svg" alt="Python Logo" class="w-8 h-auto" />
+			</div>
+			<p class="text-indian-sand leading-8 mb-8">"Beer Raiders" is a Python-based arcade-style game inspired by the classic "Space Invaders." Players take on the role of a determined bar patron defending a beer production factory from mischievous alien spaceships. Armed with a trusty weapon, the player must shoot at the descending extraterrestrial ships, which are bent on pilfering cases of beer from the production line. The player’s objective is to eliminate all alien spaceships before they reach the factory floor, ensuring the beer remains safe and sound. It's a quirky and humorous twist on a retro gaming favorite!</p>
+			<div class="inline-flex gap-4 mb-4">
+				<h3 class="text-2xl font-semibold text-indian-sand">Kind Space</h3>
+				<img src="/javascript.svg" alt="JavaScript Logo" class="w-8 h-auto" />
+				<img src="/react.svg" alt="React Logo" class="w-8 h-auto" />
+			</div>
+			<p class="text-indian-sand leading-8 mb-4">This program is a Facebook-inspired application built with TypeScript and React, designed to foster kindness and positivity. Users can create profiles where they share and post their kind acts, accompanied by pictures and text descriptions. The application sends daily "kind suggestions" to inspire users to perform thoughtful gestures for themselves or others.</p>
+
+			<p class="text-indian-sand leading-8">A key feature of the app is an interactive map of Albuquerque, NM, which displays pinpoints of locations where users have experienced or performed acts of kindness. These pins create a visual representation of kindness spreading across the community. The app encourages collaboration, positivity, and sharing, making it a platform dedicated to enhancing compassion in everyday life.</p>
+		</div>
 	</section>
 	<!-- Contact Form Section -->
 	<section id="contact-me-section" class="py-36 md:py-40 bg-gradient-to-br from-desert-sand to-sandy-sand">
 		<div class="container mx-auto mb-13">
 			<h2 class="text-3xl font-bold text-indian-sand">Contact Me</h2>
 		</div>
-		<div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-18 lg:gap-14 max-md:px-4">
+		<div class="container mx-auto flex gap-18 max-lg:flex-wrap lg:gap-14 max-md:px-6">
 			<!-- Contact Form -->
-			<form id="contact-form" class="bg-turquoise-300 p-6 shadow-md rounded border border-turquoise-500" novalidate>
+			<form id="contact-form" class="bg-turquoise-300 w-[75vw] lg:w-3/8 max-lg:mx-auto flex-none p-6 shadow-md rounded border border-turquoise-500" novalidate>
 				<div class="website">
 					<label for="website" class="block text-sm font-medium">Website</label>
 					<input type="text" id="website" name="website" tabindex="-1" autocomplete="nope" />
@@ -406,12 +421,12 @@
 				</div>
 				<div class="mb-4">
 					<label for="subject" class="block text-sm font-bold mb-2">Subject</label>
-					<input type="text" id="subject" name="subject" class="w-full px-4  xy-none py-2 border rounded" placeholder="Your email">
+					<input type="text" id="subject" name="subject" class="w-full px-4  xy-none py-2 border rounded" placeholder="Your subject">
 					<p id="subjectError" class="hidden mt-2 text-sm text-red-600"></p>
 				</div>
 				<div class="mb-4">
 					<label for="message" class="block text-sm font-bold mb-2">Message</label>
-					<textarea id="message" name="message" class="w-full px-4 py-2 border rounded" rows="4" placeholder="Your message"></textarea>
+					<textarea id="message" name="message" class="w-full px-4 pt-2 pb-2 border rounded lg:max-xl:pb-44" rows="4" placeholder="Your message"></textarea>
 					<p id="messageError" class="hidden mt-2 text-sm text-red-600"></p>
 				</div>
 				<button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
@@ -419,7 +434,7 @@
 				</div>
 			</form>
 			<!-- Paragraph with Photo -->
-			<div class="text-indian-sand text-base/relaxed">
+			<div class="text-indian-sand text-base leading-8 max-lg:mx-auto max-lg:shrink-0 max-lg:grow-0 lg:flex-1 basis-[75vw] lg:basis-5/8">
 				<img src="/Chris-225x300.jpg" alt="Chris-225x300" class="w-45 h-auto object-cover object-top rounded-md float-left mr-2" />
 				<p class="mb-4">As someone starting their journey in the dynamic world of web development, I’m always looking for opportunities to grow and make an impact. If you’re in need of a fresh perspective, a motivated team player, or someone eager to learn and contribute, I’d love to connect. Let’s explore how I can bring value to your project while honing my skills along the way.</p>
 
