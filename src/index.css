@@ -3,10 +3,15 @@
 @source "../node_modules/flowbite";
 
 @theme {
+    --color-chile-red: #BF3B3B;
     --color-indian-sand: #5C271F;
     --color-desert-sand: #D9B18E;
     --color-sandy-sand: #D9CCCA;
-    --color-sahara-sand: #5C3C1F;
-    --color-turquoise-300: #739994;
-    --color-turquoise-500: #1F5C55;
+    --color-white-sand: #F2F2F2;
+    --color-turquoise-300: #80B4BF;
+    --color-turquoise-500: #20788C;
+}
+.website {
+    position: absolute;
+    left: -9999px;
 }

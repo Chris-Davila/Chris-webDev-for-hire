@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/node_modules/lightbox2/dist/css/lightbox.min.css" />
 	<title>Vite App</title>
 </head>
 <body>
 	<header>
 		<nav class="border-gray-200 bg-indian-sand">
-			<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+			<div class="max-w-[38rem] md:max-w-screen-md lg:max-w-screen-lg xl:max-w-[85vw] flex flex-wrap items-center justify-between mx-auto py-10">
 				<a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
 					<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">My Website</span>
 					<span class="text-xl whitespace-nowrap">&#128513;</span>
@@ -22,19 +23,19 @@
 						</svg>
 					</button>
 				</div>
-				<div class="items-center justify-between hidden w-full md:flex md:w-lg md:order-1" id="navbar-cta">
-					<ul class="flex flex-col md:mx-auto font-medium p-4 md:p-0 mt-4 lg:gap-x-10 md:space-x-15 md:flex-row md:mt-0 bg-indian-sand">
+				<div class="items-center md:justify-between hidden w-md md:flex md:w-lg md:order-1" id="navbar-cta">
+					<ul class="flex flex-col md:mx-auto font-medium p-4 md:p-0 mt-4 gap-x-3 space-x-3 lg:gap-x-5 lg:space-x-8 xl:gap-x-10 xl:space-x-15 md:flex-row md:mt-0 bg-indian-sand">
 						<li>
-							<a href="#" class="block py-2 px-3 md:p-0 text-sandy-sand bg-desert-sand rounded-sm md:bg-transparent md:text-desert-sand" aria-current="page">Home</a>
+							<a href="#home-section" class="block py-2 px-3 md:p-0 text-sandy-sand bg-desert-sand rounded-sm md:bg-transparent md:text-desert-sand" aria-current="page">Home</a>
 						</li>
 						<li>
-							<a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+							<a href="#about-me-section" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
 						</li>
 						<li>
-							<a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+							<a href="#projects-section" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
 						</li>
 						<li>
-							<a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+							<a href="#contact-me-section" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -42,278 +43,395 @@
 		</nav>
 	</header>
 <!-- Main Hero Section -->
-	<section class="bg-gradient-to-br from-desert-sand to-sandy-sand py-33 md:py-40">
+	<section id="home-section" class="bg-gradient-to-br from-desert-sand to-sandy-sand py-36 md:py-52">
 		<div class="container mx-auto px-4 md:px-8 text-center">
 			<h1 class="text-white font-bold text-4xl md:text-6xl leading-tight mb-6">Christopher Davila</h1>
 			<hr class="text-white mb-5 w-2/4 mx-auto">
 			<p class="text-white text-lg md:text-2xl mb-12">-- Aspiring Web Developer --</p>
 		</div>
+		<div class="flex justify-center gap-20">
+			<a href="https://www.linkedin.com/in/christopher-davila-a451a61a9/" target="_blank"><img src="/linkedin.svg" alt="linkedIn" class="w-9 h-auto"/></a>
+			<a href="https://www.facebook.com/chris.davila.5682" target="_blank"><img src="/facebook.svg" alt="facebook" class="w-9 h-auto"/></a>
+			<a href="https://www.instagram.com/davi_jetswag/" target="_blank"><img src="/instagram.svg" alt="instagram" class="w-10 h-auto"/></a>
+			<a href="https://github.com/Chris-Davila" target="_blank"><img src="/github.svg" alt="github" class="w-10 h-auto"/></a>
+		</div>
 	</section>
 <!-- About Me Section -->
-	<section class="flex max-lg:flex-wrap max-lg:justify-center gap-13 py-27 mx-10 xl:mx-30">
-		<div class="text-indian-sand grow-5 shrink basis-xs sm:max-md:basis-md lg:basis-1/2">
-			<h1 class="text-4xl mb-7">About Me</h1>
-			<p>Bacon ipsum dolor amet pancetta pork loin jowl porchetta venison t-bone landjaeger salami capicola bacon buffalo fatback drumstick chicken short loin. Fatback salami tail alcatra short ribs frankfurter pancetta turducken ball tip pork tenderloin tri-tip cupim kevin filet mignon. Bresaola sausage tenderloin shank ham hock. Drumstick corned beef swine, jowl boudin rump strip steak landjaeger andouille jerky alcatra.
-
-			Filet mignon picanha leberkas jowl shank, landjaeger beef ribs pork chop sirloin venison cow ham strip steak. Pancetta cow shank brisket spare ribs beef ribs ribeye. Salami venison sausage bresaola bacon short ribs tongue. Swine bacon capicola tenderloin ball tip pork chop. Pork belly ribeye kielbasa ham, meatball spare ribs alcatra tongue ham hock bresaola cupim picanha t-bone. Landjaeger frankfurter chicken fatback short ribs, pig venison chislic burgdoggen. Meatloaf picanha doner hamburger kielbasa.
-
-			Pastrami drumstick alcatra shank jerky prosciutto cupim beef ribs beef meatloaf. Swine spare ribs buffalo jerky rump. Capicola tenderloin rump shank, beef filet mignon picanha. Frankfurter shoulder corned beef, kevin pastrami jerky tongue tail drumstick pork belly. Burgdoggen short loin venison, cow kevin shoulder strip steak swine. Pork loin ground round jowl, bresaola tongue prosciutto ball tip turducken landjaeger.
-
-			Pork chop cow rump shankle, tri-tip meatloaf spare ribs chuck ground round venison sausage drumstick pastrami. Fatback jerky chicken, burgdoggen buffalo rump porchetta tongue drumstick. Pork sausage salami ball tip filet mignon kielbasa frankfurter alcatra prosciutto sirloin beef ribs cupim ribeye pork loin andouille. Meatball pork rump, ground round shoulder drumstick shankle pig hamburger cupim sausage filet mignon. Landjaeger ground round doner tenderloin short ribs meatball spare ribs strip steak ham. Ground round tenderloin pork short loin burgdoggen ribeye capicola drumstick. Shoulder picanha brisket tri-tip tongue flank ground round capicola ribeye.</p>
+	<section id="about-me-section" class="bg-blend-color bg-white-sand py-36 md:py-40">
+		<div class="container text-indian-sand mx-auto mb-13">
+			<h1 class="text-3xl font-bold">About Me</h1>
 		</div>
-		<!-- Carousel -->
-		<div id="indicators-carousel" class="relative grow-3 shrink max-md:shrink-0 basis-xs sm:max-md:basis-md lg:basis-1/2" data-carousel="static">
-			<!-- Carousel wrapper -->
-			<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-				<!-- Item 1 -->
-				<div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-					<img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-				</div>
-				<!-- Item 2 -->
-				<div class="hidden duration-700 ease-in-out" data-carousel-item>
-					<img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-				</div>
-				<!-- Item 3 -->
-				<div class="hidden duration-700 ease-in-out" data-carousel-item>
-					<img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-				</div>
-				<!-- Item 4 -->
-				<div class="hidden duration-700 ease-in-out" data-carousel-item>
-					<img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-				</div>
-				<!-- Item 5 -->
-				<div class="hidden duration-700 ease-in-out" data-carousel-item>
-					<img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-				</div>
+		<div class="container mx-auto flex max-lg:flex-wrap gap-18 lg:gap-14">
+			<div class="text-indian-sand text-base/relaxed max-lg:mx-auto max-lg:grow-0 max-lg:shrink-0 lg:flex-1 basis-[75vw] lg:basis-5/8">
+				<p class="mb-4">Hi there! I'm Chris, a passionate individual who finds joy in a variety of activities and interests. As an avid video gamer and fitness enthusiast, I like running, going to the gym, and lifting weights. My faith is an essential part of my life; I am a Christian and attend church every Sunday. I am actively involved in my church community, where I deliver food to the needy, volunteer in the library, and help teach priesthood lessons.</p>
+
+				<p class="mb-4">I have an insatiable curiosity for learning and expanding my knowledge, particularly in computing and languages. Engaging with people in their native languages and learning about different cultures fascinates me. Problem-solving is my forte—I find fulfillment in solving puzzles in games, tackling math problems, and taking on coding challenges.</p>
+
+				<p class="mb-4">My strengths are my ability to persevere through challenges. I have had challenges with my personal health, but I kept strong throughout the turmoil and struggles. My focus has been a big part of why I succeed in the face of challenge. Concentrating and focusing on something helps with my programming, by giving me better debugging insights and search skills. Like my mind, I like to keep my body strong by lifting weights and jogging. Both my mental and physical health are improved when I exercise.
+				</p>
+
+				<p class="mb-4">As the youngest of three boys, family is important to me. When it comes to food, I'm a die-hard fan of Mexican cuisine. Tacos and burritos with carnitas, carne asada, and brisket are my favorites. I also have an unwavering love for chile and require hot sauce on all my meals.</p>
+
+				<p>Thanks for taking the time to get to know me!</p>
 			</div>
-			<!-- Slider indicators -->
-			<div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-				<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+			<!-- Carousel -->
+			<div id="controls-carousel" class="relative max-lg:mx-auto h-fit lg:self-center max-lg:grow-0 max-lg:shrink-0 lg:flex-none basis-[75vw] lg:basis-3/8" data-carousel="static">
+				<!-- Carousel wrapper -->
+				<div class="relative h-64 overflow-hidden rounded-lg md:h-116">
+					<!-- Item 1 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img src="/mi_familia.jpg" class="absolute block w-full h-full object-left-bottom object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+					</div>
+					<!-- Item 2 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+						<img src="/temple_pic.jpg" class="absolute block w-full h-full md:object-center object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+					</div>
+					<!-- Item 3 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img src="/NSLSinductphoto.png" class="absolute block w-full h-full object-center md:object-top object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+					</div>
+					<!-- Item 4 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img src="/Chris-19.jpg" class="absolute block w-full h-full object-top object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+					</div>
+					<!-- Item 5 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img src="/20230812_203045.jpg" class="absolute block w-full h-full object-center object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+					</div>
+				</div>
+				<!-- Slider controls -->
+				<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+				  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+						<svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+							 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+						</svg>
+						<span class="sr-only">Previous</span>
+				  </span>
+				</button>
+				<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+				  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+						<svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+							 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+						</svg>
+						<span class="sr-only">Next</span>
+				  </span>
+				</button>
 			</div>
-			<!-- Slider controls -->
-			<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-			  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-					<svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-						 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-					</svg>
-					<span class="sr-only">Previous</span>
-			  </span>
-			</button>
-			<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-			  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-					<svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-						 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-					</svg>
-					<span class="sr-only">Next</span>
-			  </span>
-			</button>
 		</div>
 	</section>
 	<!-- My Accomplishments -->
-	<section class="flex max-lg:flex-wrap justify-around max-lg:justify-center gap-13 py-30 bg-gradient-to-br from-desert-sand to-sandy-sand">
-		<!-- Card #1 -->
-		<div class="w-full max-w-lg p-4 bg-turquoise-500 border border-gray-200 rounded-lg shadow-sm sm:p-8">
-			<h5 class="text-xl font-bold leading-none text-white mb-4">Education and Awards</h5>
-			<div class="flow-root">
-				<ul role="list" class="divide-y divide-gray-200">
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
+	<section id="accomplishments-section" class="py-36 md:py-40 bg-gradient-to-br from-desert-sand to-sandy-sand">
+		<div class="container mx-auto mb-13">
+			<h1 class="text-3xl font-bold text-indian-sand">My Accomplishments</h1>
+		</div>
+		<!-- Cards -->
+		<div class="@container container mx-auto flex max-lg:justify-center lg:justify-between max-lg:flex-wrap max-lg:gap-20">
+			<!-- Card #1 -->
+			<div class="@max-lg:basis-[85vw] @lg:basis-lg @xl:basis-[35rem] @2xl:basis-[40rem] shrink p-4 bg-turquoise-500 border border-gray-200 rounded-lg shadow-sm sm:p-8">
+				<h5 class="text-xl font-bold leading-none text-white mb-6">Education and Awards</h5>
+				<div class="flow-root">
+					<ul role="list" class="divide-y divide-gray-200">
+						<li class="py-3 sm:py-4">
+							<div class="flex items-center">
+								<div class="shrink-0">
+									<img src="/graduation_cap.png" alt="Grad Cap" class="w-9 h-auto object-cover rounded-lg"/>
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										Certificate Full Stack Web Development
+									</p>
+									<p class="text-sm text-teal-100 truncate">
+										Central New Mexico Community College
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Awarded: April 14, 2025
+								</div>
 							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Neil Sims
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
+						</li>
+						<li class="py-3 sm:py-4">
+							<div class="flex items-center ">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-lg" src="/graduation_cap.png" alt="Grad Cap">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										BS Information Engineering Technology
+									</p>
+									<p class="text-sm text-teal-100 truncate">
+										New Mexico State University - GPA 3.4
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Awarded: May 14, 2021
+								</div>
 							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$320
+						</li>
+						<li class="py-3 sm:py-4">
+							<div class="flex items-center">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-lg" src="/graduation_cap.png" alt="Grad Cap">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										AAS Computer Information Technology
+									</p>
+									<p class="text-sm text-teal-100 truncate">
+										Doña Ana Community College - GPA 3.4
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Awarded: December 11, 2015
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center ">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image">
+						</li>
+						<li class="py-3 sm:py-4">
+							<div class="flex items-center ">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-lg" src="/graduation_cap.png" alt="Grad Cap">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										Crimson Scholar
+									</p>
+									<p class="text-sm text-teal-100 truncate">
+										New Mexico State University - GPA 3.5
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Awarded: April 10, 2016
+								</div>
 							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Bonnie Green
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
+						</li>
+						<li class="pt-3 pb-0 sm:pt-4">
+							<div class="flex items-center ">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-lg" src="/graduation_cap.png" alt="Grad Cap">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										Daniels Scholar
+									</p>
+									<p class="text-sm text-teal-100 truncate">
+										New Mexico State University - GPA 3.4
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Awarded: March 11, 2016
+								</div>
 							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$3467
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Card #2 -->
+			<div class="@max-lg:basis-[85vw] @lg:basis-lg @xl:basis-[35rem] @2xl:basis-[40rem] shrink p-4 bg-turquoise-500 border border-gray-200 rounded-lg shadow-sm sm:p-8">
+				<h5 class="text-xl font-bold leading-none text-white mb-6">Certifications & Memberships</h5>
+				<div class="flow-root">
+					<ul role="list" class="divide-y divide-gray-200">
+						<li class="py-3 sm:py-4">
+							<div class="flex items-center">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-full" src="/diploma.png" alt="Diploma image">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										AWS Certified Developer - Associate
+									</p>
+									<p class="text-sm truncate text-teal-100">
+										Awarded: February 23, 2023
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Expires: February 23, 2026
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image">
+						</li>
+						<li class="py-3 sm:py-4">
+							<div class="flex items-center ">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-full" src="/diploma.png" alt="Diploma image">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										IT Specialist - JavaScript
+									</p>
+									<p class="text-sm truncate text-teal-100">
+										Awarded: August 12, 2022
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Expires: N/A
+								</div>
 							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Michael Gough
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
+						</li>
+						<li class="py-3 sm:py-4">
+							<div class="flex items-center">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-full" src="/diploma.png" alt="Diploma image">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										CompTIA Linux+ CE
+									</p>
+									<p class="text-sm truncate text-teal-100">
+										Awarded: May 19, 2022
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Expires: May 19, 2025
+								</div>
 							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$67
+						</li>
+						<li class="py-3 sm:py-4">
+							<div class="flex items-center ">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-full" src="/diploma.png" alt="Diploma image">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium truncate text-white">
+										The National Society of Leadership & Success
+									</p>
+									<p class="text-sm text-teal-100 truncate">
+										Awarded: April 02, 2021
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Expires: N/A
+								</div>
 							</div>
-						</div>
-					</li>
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center ">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image">
+						</li>
+						<li class="pt-3 pb-0 sm:pt-4">
+							<div class="flex items-center ">
+								<div class="shrink-0">
+									<img class="w-9 h-auto object-cover rounded-full" src="/diploma.png" alt="Diploma image">
+								</div>
+								<div class="flex-1 min-w-0 ms-4">
+									<p class="text-base font-medium text-white truncate">
+										Debug Club
+									</p>
+									<p class="text-sm text-teal-100 truncate">
+										Awarded: January 20, 2014
+									</p>
+								</div>
+								<div class="inline-flex items-center text-sm font-semibold text-teal-100">
+									Expired: December 10, 2016
+								</div>
 							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Lana Byrd
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
-							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$367
-							</div>
-						</div>
-					</li>
-					<li class="pt-3 pb-0 sm:pt-4">
-						<div class="flex items-center ">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image">
-							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Thomes Lean
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
-							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$2367
-							</div>
-						</div>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<!-- Card #2 -->
-		<div class="w-full max-w-lg p-4 bg-turquoise-500 border border-gray-200 rounded-lg shadow-sm sm:p-8">
-			<h5 class="text-xl font-bold leading-none text-white mb-7">Latest Customers</h5>
-			<div class="flow-root">
-				<ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Neil image">
-							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Neil Sims
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
-							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$320
-							</div>
-						</div>
-					</li>
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center ">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image">
-							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Bonnie Green
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
-							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$3467
-							</div>
-						</div>
-					</li>
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Michael image">
-							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Michael Gough
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
-							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$67
-							</div>
-						</div>
-					</li>
-					<li class="py-3 sm:py-4">
-						<div class="flex items-center ">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-4.jpg" alt="Lana image">
-							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Lana Byrd
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
-							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$367
-							</div>
-						</div>
-					</li>
-					<li class="pt-3 pb-0 sm:pt-4">
-						<div class="flex items-center ">
-							<div class="shrink-0">
-								<img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Thomas image">
-							</div>
-							<div class="flex-1 min-w-0 ms-4">
-								<p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-									Thomes Lean
-								</p>
-								<p class="text-sm text-gray-500 truncate dark:text-gray-400">
-									email@windster.com
-								</p>
-							</div>
-							<div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-								$2367
-							</div>
-						</div>
-					</li>
-				</ul>
+	</section>
+	<!-- My Projects Section -->
+	<section id="projects-section" class="py-36 md:py-40">
+		<div class="container mx-auto mb-13">
+			<h2 class="text-3xl font-bold text-indian-sand">My Projects</h2>
+		</div>
+		<div class="container mx-auto">
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-md:px-4">
+				<div class="group cursor-pointer relative">
+					<a href="/BeerRaid1.png" data-lightbox="beer-raid" data-title="Beer Raiders Start Screen">
+						<img src="/BeerRaid1.png" alt="Beer Raiders Game" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
+					</a>
+				</div>
+
+				<div class="group cursor-pointer relative">
+					<a href="/BeerRaid2.png" data-lightbox="beer-raid" data-title="Beer Raiders Gameplay">
+						<img src="/BeerRaid2.png" alt="Beer Raiders Game" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
+					</a>
+				</div>
+
+				<div class="group cursor-pointer relative">
+					<a href="/kindSpace.png" data-lightbox="kind-space" data-title="Kind Space Home Page">
+						<img src="/kindSpace.png" alt="Kind Space Home Page" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
+					</a>
+				</div>
+
+				<div class="group cursor-pointer relative">
+					<a href="/kindnessFeed.png" data-lightbox="kind-space" data-title="Kind Space Acts Feed">
+						<img src="/kindnessFeed.png" alt="Kind Space Feed" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
+					</a>
+				</div>
+
+				<div class="group cursor-pointer relative">
+					<a href="/kindnessMap.png" data-lightbox="kind-space" data-title="Kind Space Kindness Map Page">
+						<img src="/kindnessMap.png" alt="Kind Space Map" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
+					</a>
+				</div>
+
+				<div class="group cursor-pointer relative">
+					<a href="/dailySuggest.png" data-lightbox="kind-space" data-title="Kind Space Daily Suggestions Page">
+						<img src="/dailySuggest.png" alt="Kind Space Daily Suggestions" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
+					</a>
+				</div>
+
+				<div class="group cursor-pointer relative">
+					<a href="/t-shirtCalc.png" data-lightbox="t-shirt" data-title="Calculate T-Shirt Total Page">
+						<img src="/t-shirtCalc.png" alt="T-Shirt Calculator" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
+					</a>
+				</div>
+
+				<div class="group cursor-pointer relative">
+					<a href="/selfServiceMachine.png" data-lightbox="Fast-Menu" data-title="Calculate Food Item Total Page">
+						<img src="/selfServiceMachine.png" alt="Fast Food Menu Items" class="w-full h-48 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"/>
+					</a>
+				</div>
+				<!-- Repeat this div for each image -->
 			</div>
 		</div>
+	</section>
+	<!-- Contact Form Section -->
+	<section id="contact-me-section" class="py-36 md:py-40 bg-gradient-to-br from-desert-sand to-sandy-sand">
+		<div class="container mx-auto mb-13">
+			<h2 class="text-3xl font-bold text-indian-sand">Contact Me</h2>
+		</div>
+		<div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-18 lg:gap-14 max-md:px-4">
+			<!-- Contact Form -->
+			<form id="contact-form" class="bg-turquoise-300 p-6 shadow-md rounded border border-turquoise-500" novalidate>
+				<div class="website">
+					<label for="website" class="block text-sm font-medium">Website</label>
+					<input type="text" id="website" name="website" tabindex="-1" autocomplete="nope" />
+				</div>
+				<div class="mb-4">
+					<label for="name" class="block text-sm font-bold mb-2">Name</label>
+					<input type="text" name="name" id="name" class="w-full px-4 py-2 border rounded" placeholder="Your name">
+					<p id="nameError" class="hidden mt-2 text-sm text-red-600"></p>
+				</div>
+				<div class="mb-4">
+					<label for="email" class="block text-sm font-bold mb-2">Email</label>
+					<input type="email" name="email" id="email" class="w-full px-4  xy-none py-2 border rounded" placeholder="Your email">
+					<p id="emailError" class="hidden mt-2 text-sm text-red-600"></p>
+				</div>
+				<div class="mb-4">
+					<label for="subject" class="block text-sm font-bold mb-2">Subject</label>
+					<input type="text" id="subject" name="subject" class="w-full px-4  xy-none py-2 border rounded" placeholder="Your email">
+					<p id="subjectError" class="hidden mt-2 text-sm text-red-600"></p>
+				</div>
+				<div class="mb-4">
+					<label for="message" class="block text-sm font-bold mb-2">Message</label>
+					<textarea id="message" name="message" class="w-full px-4 py-2 border rounded" rows="4" placeholder="Your message"></textarea>
+					<p id="messageError" class="hidden mt-2 text-sm text-red-600"></p>
+				</div>
+				<button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+				<div  class="hidden p-4 my-4 text-sm rounded-lg" id="status" role="alert">
+				</div>
+			</form>
+			<!-- Paragraph with Photo -->
+			<div class="text-indian-sand text-base/relaxed">
+				<img src="/Chris-225x300.jpg" alt="Chris-225x300" class="w-45 h-auto object-cover object-top rounded-md float-left mr-2" />
+				<p class="mb-4">As someone starting their journey in the dynamic world of web development, I’m always looking for opportunities to grow and make an impact. If you’re in need of a fresh perspective, a motivated team player, or someone eager to learn and contribute, I’d love to connect. Let’s explore how I can bring value to your project while honing my skills along the way.</p>
 
+				<p class="mb-4">Collaboration is one of the best ways to grow and create meaningful work. Whether you’re building something from the ground up or need an extra pair of hands on an existing project, I’m enthusiastic about diving in and working together. Let’s combine our talents and turn ideas into reality.</p>
 
+				<p class="mb-4">I’m here to learn, build, and grow—so don’t hesitate to get in touch! Whether it’s to discuss job openings, potential collaborations, or even to share tips about web development, I’m just a message away. You can reach me via the form below or through [insert preferred contact methods]. I can’t wait to hear from you and embark on exciting projects together!</p>
+
+				<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce ut fermentum justo. Maecenas tempor fringilla felis a vestibulum. Nullam eu dolor sit amet magna malesuada pharetra. Aliquam efficitur urna vitae erat condimentum volutpat. In bibendum, purus sit amet venenatis vestibulum, nulla purus commodo libero, id hendrerit odio tortor sit amet mi. Ut vel dui erat. Curabitur dapibus purus vel libero vulputate, nec fermentum justo sodales.</p>
+			</div>
+		</div>
 	</section>
 	<script type="module" src="/src/main.js"></script>
+	<script src="/node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
