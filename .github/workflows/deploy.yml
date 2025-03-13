@@ -24,5 +24,5 @@ jobs:
 
       - name: Deploy to server
         run: |
-         ssh-keyscan -H iliketocopyandpasteblindly.me >> ~/.ssh/known_hosts 
-         scp -r ./dist/* gkephart@iliketocopyandpasteblindly.me:/var/www/iliketocopyandpasteblindly.me/html
+         ssh-keyscan -H ddavilac.space >> ~/.ssh/known_hosts 
+         scp -r ./dist/* cdavila@ddavilac.space:/var/www/ddavilac.space/html
