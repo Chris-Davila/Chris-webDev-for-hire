@@ -56,7 +56,9 @@ const firstHandler = async (request, response, next) => {
 	}
 }
 
-indexRoute.route('/').post(firstHandler)
+indexRoute.route('/').post(firstHandler).get((request, response) => {
+	response.json({status: 200, message: 'hello world'})
+})
 
 app.use('/apis', indexRoute)
 
