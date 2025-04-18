@@ -84,7 +84,7 @@ export function contactForm() {
 			return
 		}
 		// if everything is valid submit the form
-		fetch('http://localhost:4200/apis', {
+		fetch('./apis', {
 			method:'post',
 			headers: {'Content-Type': 'application/json'},
 			body:JSON.stringify(values)
