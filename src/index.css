@@ -1,6 +1,7 @@
-@import "tailwindcss";
-@plugin "flowbite/plugin";
-@source "../node_modules/flowbite";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "flowbite";
+
 
 @theme {
     --color-chile-red: #BF3B3B;
